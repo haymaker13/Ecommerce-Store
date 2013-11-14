@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  price: 9.99
+  stock_quantity: 1
+  diameter: 1
+  width: 9.99
+  bolt_pattern: MyString
+  company: MyString
+  colour: MyString
+  offset: 9.99
+  type: 
+
+two:
+  name: MyString
+  description: MyString
+  price: 9.99
+  stock_quantity: 1
+  diameter: 1
+  width: 9.99
+  bolt_pattern: MyString
+  company: MyString
+  colour: MyString
+  offset: 9.99
+  type: 
