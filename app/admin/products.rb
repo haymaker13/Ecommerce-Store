@@ -9,7 +9,7 @@ ActiveAdmin.register Product do
     column :company
     column "Wheel Diameter", :diameter
     column "Image" do |image|
-      image_tag(image.image, :size => "80x80")
+      image_tag(image.image, :size => "100x80")
     end
       
     default_actions
