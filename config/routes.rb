@@ -8,7 +8,11 @@ EcommStore::Application.routes.draw do
   get "store/show"
 
   root :to => 'store#index', :via => :get
-  match 'store/:id' => 'store#show', :as => :store_product, :via => :get
+  match 'products/:id' => 'store#show', :as => :store_product, :via => :get
+
+  match 'search' => 'store#search', :as => 'search', :via => :get
+
+  match 'search' => 'store#search_results', :as => 'search_results', :via => :post
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
