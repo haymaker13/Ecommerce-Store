@@ -35,6 +35,10 @@ EcommStore::Application.routes.draw do
 
   match 'cast_results' => 'store#cast_results', :as => 'cast_results', :via => :post
 
+  match 'about_us' => 'store#about_us', :as => 'about_us', :via => :get
+
+  match 'contact_us' => 'store#contact_us', :as => 'contact_us', :via => :get
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   

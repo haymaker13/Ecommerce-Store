@@ -54,4 +54,12 @@ class StoreController < ApplicationController
  def cast_results
  	@cast = Product.where("name LIKE ?", "%#{params[:keywords]}%").where(:category_id => 5)
  end
+
+ def about_us
+ 	@about_us = Page.where(:id => 1)
+ end
+
+ def contact_us
+ 	@contact_us = Page.where(:id => 2)
+ end
 end
