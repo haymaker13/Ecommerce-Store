@@ -1,0 +1,7 @@
+<h2>Search Results</h2>
+<% if @light_weight.empty? %>
+<p>
+	No results found for ' <%= params[:keywords] %> '
+</p>
+<% end %>
+<%= render @light_weight %>

@@ -1,0 +1,7 @@
+<h1>Forged Aluminium Wheels</h1>
+<p><%=link_to "Home", root_path%></p>
+<%= form_tag forged_results_path do%>
+	<%=text_field_tag :keywords %>
+	<%= submit_tag 'Search' %>
+<% end %>
+<%= render @forged %>

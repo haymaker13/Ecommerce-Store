@@ -1,0 +1,7 @@
+<h1>Forged Aluminium Light Weight Racing Wheels</h1>
+<p><%=link_to "Home", root_path%></p>
+<%= form_tag light_weight_results_path do%>
+	<%=text_field_tag :keywords %>
+	<%= submit_tag 'Search' %>
+<% end %>
+<%= render @light_weight %>

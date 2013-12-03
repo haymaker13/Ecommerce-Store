@@ -14,6 +14,14 @@ EcommStore::Application.routes.draw do
 
   match 'search_results' => 'store#search_results', :as => 'search_results', :via => :post
 
+  match 'light_weight' => 'store#light_weight', :as => 'light_weight', :via => :get
+
+  match 'light_weight_results' => 'store#light_weight_results', :as => 'light_weight_results', :via => :post
+
+  match 'forged' => 'store#forged', :as => 'forged', :via => :get
+
+  match 'forged_results' => 'store#forged_results', :as => 'forged_results', :via => :post
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
