@@ -1,4 +1,15 @@
 EcommStore::Application.routes.draw do
+  get "products/index"
+
+  get "products/show"
+
+  get "store/index"
+
+  get "store/show"
+
+  root :to => 'store#index', :via => :get
+  match 'store/:id' => 'store#show', :as => :store_product, :via => :get
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
