@@ -8,6 +8,7 @@ EcommStore::Application.routes.draw do
   get "store/show"
 
   root :to => 'store#index', :via => :get
+
   match 'products/:id' => 'store#show', :as => :store_product, :via => :get
 
   match 'search' => 'store#search', :as => 'search', :via => :get
@@ -21,6 +22,18 @@ EcommStore::Application.routes.draw do
   match 'forged' => 'store#forged', :as => 'forged', :via => :get
 
   match 'forged_results' => 'store#forged_results', :as => 'forged_results', :via => :post
+
+  match 'off_road' => 'store#off_road', :as => 'off_road', :via => :get
+
+  match 'off_road_results' => 'store#off_road_results', :as => 'off_road_results', :via => :post
+
+  match 'classic' => 'store#classic', :as => 'classic', :via => :get
+
+  match 'classic_results' => 'store#classic_results', :as => 'classic_results', :via => :post
+
+  match 'cast' => 'store#cast', :as => 'cast', :via => :get
+
+  match 'cast_results' => 'store#cast_results', :as => 'cast_results', :via => :post
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

@@ -1,0 +1,7 @@
+<h1>Off-Road Racing Wheels</h1>
+<p><%=link_to "Home", root_path%></p>
+<%= form_tag off_road_results_path do%>
+	<%=text_field_tag :keywords %>
+	<%= submit_tag 'Search' %>
+<% end %>
+<%= render @off_road %>
