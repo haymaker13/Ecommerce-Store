@@ -12,7 +12,7 @@ EcommStore::Application.routes.draw do
 
   match 'search' => 'store#search', :as => 'search', :via => :get
 
-  match 'search' => 'store#search_results', :as => 'search_results', :via => :post
+  match 'search_results' => 'store#search_results', :as => 'search_results', :via => :post
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
