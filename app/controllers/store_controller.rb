@@ -8,7 +8,6 @@ class StoreController < ApplicationController
  end
 
  def search
-
  end
 
  def search_results
